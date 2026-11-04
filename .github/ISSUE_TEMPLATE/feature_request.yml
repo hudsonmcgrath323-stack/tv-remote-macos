@@ -1,0 +1,24 @@
+name: Feature Request
+description: Suggest an enhancement, shortcut, or smart-home integration for TV Remote
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Use Case
+      description: What workflow or problem would this feature solve?
+      placeholder: "I'd love to launch specific tvOS apps (like Netflix or YouTube) directly from a quick-launch drawer..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: Describe how you envision this working in the menu bar popover and/or standalone window.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered (Optional)

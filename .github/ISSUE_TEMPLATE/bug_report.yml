@@ -1,0 +1,59 @@
+name: Bug Report
+description: Report a bug with Apple TV discovery, pairing, controls, or macOS UI
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report! Please fill out the details below.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: A clear and concise description of the bug.
+      placeholder: Clicking Mute does not mute audio when connected over...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Open TV Remote from the menu bar
+        2. Pair with Apple TV 4K
+        3. Click ...
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS Version & Mac Model
+      placeholder: "macOS 27.0 (Apple Silicon M3)"
+    validations:
+      required: true
+  - type: input
+    id: tvos
+    attributes:
+      label: Apple TV Model & tvOS Version
+      placeholder: "Apple TV 4K (3rd gen), tvOS 26.6"
+    validations:
+      required: true
+  - type: dropdown
+    id: audio_output
+    attributes:
+      label: Apple TV Audio Output Setup
+      options:
+        - HDMI-CEC / TV Receiver
+        - HDMI eARC
+        - HomePod / AirPlay Speakers
+        - TV Built-in Speakers (IR only)
+        - Not sure / Not applicable
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or Screenshots (Optional)
+      description: Run with `TVREMOTE_LOG_LEVEL=DEBUG` if relevant—please ensure no personal IPs or hostnames you wish to keep private are included.
+      render: shell

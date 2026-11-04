@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000012B00000100000001 /* TVRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000012B00000100000001 /* TVRemoteApp.swift */; };
+		A10000022B00000100000001 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000022B00000100000001 /* AppState.swift */; };
+		A10000152B00000100000001 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000172B00000100000001 /* AppEnvironment.swift */; };
+		A10000032B00000100000001 /* AppleTVDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000032B00000100000001 /* AppleTVDevice.swift */; };
+		A10000042B00000100000001 /* RemoteCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000042B00000100000001 /* RemoteCommand.swift */; };
+		A10000052B00000100000001 /* NowPlayingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000052B00000100000001 /* NowPlayingInfo.swift */; };
+		A10000062B00000100000001 /* AppleTVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000062B00000100000001 /* AppleTVService.swift */; };
+		A10000072B00000100000001 /* PyATVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000072B00000100000001 /* PyATVService.swift */; };
+		A10000082B00000100000001 /* BridgeProcessActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000082B00000100000001 /* BridgeProcessActor.swift */; };
+		A10000092B00000100000001 /* MockAppleTVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000092B00000100000001 /* MockAppleTVService.swift */; };
+		A100000A2B00000100000001 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000A2B00000100000001 /* KeychainStore.swift */; };
+		A100000B2B00000100000001 /* GlobalHotkeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000B2B00000100000001 /* GlobalHotkeyManager.swift */; };
+		A100000C2B00000100000001 /* RemotePopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000C2B00000100000001 /* RemotePopoverView.swift */; };
+		A10000142B00000100000001 /* RemoteWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000162B00000100000001 /* RemoteWindowView.swift */; };
+		A100000D2B00000100000001 /* HeaderBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000D2B00000100000001 /* HeaderBarView.swift */; };
+		A100000E2B00000100000001 /* CircularDPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000E2B00000100000001 /* CircularDPadView.swift */; };
+		A100000F2B00000100000001 /* ControlRowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000F2B00000100000001 /* ControlRowsView.swift */; };
+		A10000102B00000100000001 /* NowPlayingStripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000102B00000100000001 /* NowPlayingStripView.swift */; };
+		A10000112B00000100000001 /* PairingFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000112B00000100000001 /* PairingFlowView.swift */; };
+		A10000122B00000100000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000122B00000100000001 /* SettingsView.swift */; };
+		A10000132B00000100000001 /* atv_bridge.py in Resources */ = {isa = PBXBuildFile; fileRef = A20000132B00000100000001 /* atv_bridge.py */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20000002B00000100000001 /* TV Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TV Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000012B00000100000001 /* TVRemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRemoteApp.swift; sourceTree = "<group>"; };
+		A20000022B00000100000001 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A20000172B00000100000001 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		A20000032B00000100000001 /* AppleTVDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTVDevice.swift; sourceTree = "<group>"; };
+		A20000042B00000100000001 /* RemoteCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCommand.swift; sourceTree = "<group>"; };
+		A20000052B00000100000001 /* NowPlayingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingInfo.swift; sourceTree = "<group>"; };
+		A20000062B00000100000001 /* AppleTVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTVService.swift; sourceTree = "<group>"; };
+		A20000072B00000100000001 /* PyATVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PyATVService.swift; sourceTree = "<group>"; };
+		A20000082B00000100000001 /* BridgeProcessActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeProcessActor.swift; sourceTree = "<group>"; };
+		A20000092B00000100000001 /* MockAppleTVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppleTVService.swift; sourceTree = "<group>"; };
+		A200000A2B00000100000001 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		A200000B2B00000100000001 /* GlobalHotkeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHotkeyManager.swift; sourceTree = "<group>"; };
+		A200000C2B00000100000001 /* RemotePopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePopoverView.swift; sourceTree = "<group>"; };
+		A20000162B00000100000001 /* RemoteWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteWindowView.swift; sourceTree = "<group>"; };
+		A200000D2B00000100000001 /* HeaderBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBarView.swift; sourceTree = "<group>"; };
+		A200000E2B00000100000001 /* CircularDPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularDPadView.swift; sourceTree = "<group>"; };
+		A200000F2B00000100000001 /* ControlRowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlRowsView.swift; sourceTree = "<group>"; };
+		A20000102B00000100000001 /* NowPlayingStripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingStripView.swift; sourceTree = "<group>"; };
+		A20000112B00000100000001 /* PairingFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingFlowView.swift; sourceTree = "<group>"; };
+		A20000122B00000100000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A20000132B00000100000001 /* atv_bridge.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = atv_bridge.py; sourceTree = "<group>"; };
+		A20000142B00000100000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000152B00000100000001 /* TVRemote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TVRemote.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30000012B00000100000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40000002B00000100000001 = {
+			isa = PBXGroup;
+			children = (
+				A40000082B00000100000001 /* src */,
+				A40000072B00000100000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A40000082B00000100000001 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A40000012B00000100000001 /* TVRemote */,
+				A40000062B00000100000001 /* Helper */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A40000012B00000100000001 /* TVRemote */ = {
+			isa = PBXGroup;
+			children = (
+				A20000142B00000100000001 /* Info.plist */,
+				A20000152B00000100000001 /* TVRemote.entitlements */,
+				A40000022B00000100000001 /* App */,
+				A40000032B00000100000001 /* Models */,
+				A40000042B00000100000001 /* Services */,
+				A40000052B00000100000001 /* Views */,
+			);
+			path = TVRemote;
+			sourceTree = "<group>";
+		};
+		A40000022B00000100000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A20000012B00000100000001 /* TVRemoteApp.swift */,
+				A20000022B00000100000001 /* AppState.swift */,
+				A20000172B00000100000001 /* AppEnvironment.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A40000032B00000100000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A20000032B00000100000001 /* AppleTVDevice.swift */,
+				A20000042B00000100000001 /* RemoteCommand.swift */,
+				A20000052B00000100000001 /* NowPlayingInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A40000042B00000100000001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A20000062B00000100000001 /* AppleTVService.swift */,
+				A20000072B00000100000001 /* PyATVService.swift */,
+				A20000082B00000100000001 /* BridgeProcessActor.swift */,
+				A20000092B00000100000001 /* MockAppleTVService.swift */,
+				A200000A2B00000100000001 /* KeychainStore.swift */,
+				A200000B2B00000100000001 /* GlobalHotkeyManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A40000052B00000100000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A200000C2B00000100000001 /* RemotePopoverView.swift */,
+				A20000162B00000100000001 /* RemoteWindowView.swift */,
+				A200000D2B00000100000001 /* HeaderBarView.swift */,
+				A200000E2B00000100000001 /* CircularDPadView.swift */,
+				A200000F2B00000100000001 /* ControlRowsView.swift */,
+				A20000102B00000100000001 /* NowPlayingStripView.swift */,
+				A20000112B00000100000001 /* PairingFlowView.swift */,
+				A20000122B00000100000001 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A40000062B00000100000001 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A20000132B00000100000001 /* atv_bridge.py */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A40000072B00000100000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20000002B00000100000001 /* TV Remote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000012B00000100000001 /* TVRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80000022B00000100000001 /* Build configuration list for PBXNativeTarget "TVRemote" */;
+			buildPhases = (
+				A60000012B00000100000001 /* Sources */,
+				A30000012B00000100000001 /* Frameworks */,
+				A60000022B00000100000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVRemote;
+			productName = TVRemote;
+			productReference = A20000002B00000100000001 /* TV Remote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A70000012B00000100000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A50000012B00000100000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = A80000012B00000100000001 /* Build configuration list for PBXProject "TVRemote" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A40000002B00000100000001;
+			productRefGroup = A40000072B00000100000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50000012B00000100000001 /* TVRemote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60000022B00000100000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000132B00000100000001 /* atv_bridge.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60000012B00000100000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000012B00000100000001 /* TVRemoteApp.swift in Sources */,
+				A10000022B00000100000001 /* AppState.swift in Sources */,
+				A10000152B00000100000001 /* AppEnvironment.swift in Sources */,
+				A10000032B00000100000001 /* AppleTVDevice.swift in Sources */,
+				A10000042B00000100000001 /* RemoteCommand.swift in Sources */,
+				A10000052B00000100000001 /* NowPlayingInfo.swift in Sources */,
+				A10000062B00000100000001 /* AppleTVService.swift in Sources */,
+				A10000072B00000100000001 /* PyATVService.swift in Sources */,
+				A10000082B00000100000001 /* BridgeProcessActor.swift in Sources */,
+				A10000092B00000100000001 /* MockAppleTVService.swift in Sources */,
+				A100000A2B00000100000001 /* KeychainStore.swift in Sources */,
+				A100000B2B00000100000001 /* GlobalHotkeyManager.swift in Sources */,
+				A100000C2B00000100000001 /* RemotePopoverView.swift in Sources */,
+				A10000142B00000100000001 /* RemoteWindowView.swift in Sources */,
+				A100000D2B00000100000001 /* HeaderBarView.swift in Sources */,
+				A100000E2B00000100000001 /* CircularDPadView.swift in Sources */,
+				A100000F2B00000100000001 /* ControlRowsView.swift in Sources */,
+				A10000102B00000100000001 /* NowPlayingStripView.swift in Sources */,
+				A10000112B00000100000001 /* PairingFlowView.swift in Sources */,
+				A10000122B00000100000001 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A90000012B00000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A90000022B00000100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		A90000032B00000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = src/TVRemote/TVRemote.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = NO;
+				EXECUTABLE_NAME = TVRemote;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = src/TVRemote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hudson.TVRemote;
+				PRODUCT_NAME = "TV Remote";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A90000042B00000100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = src/TVRemote/TVRemote.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = NO;
+				EXECUTABLE_NAME = TVRemote;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = src/TVRemote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hudson.TVRemote;
+				PRODUCT_NAME = "TV Remote";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A80000012B00000100000001 /* Build configuration list for PBXProject "TVRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90000012B00000100000001 /* Debug */,
+				A90000022B00000100000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80000022B00000100000001 /* Build configuration list for PBXNativeTarget "TVRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90000032B00000100000001 /* Debug */,
+				A90000042B00000100000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A70000012B00000100000001 /* Project object */;
+}

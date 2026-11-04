@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  python-bridge:
+    name: Python Helper Lint & Unit Tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt ruff
+
+      - name: Syntax & lint check
+        run: |
+          python -m py_compile src/Helper/atv_bridge.py tests/test_atv_bridge.py
+          ruff check src/Helper/atv_bridge.py tests/test_atv_bridge.py
+
+      - name: Run bridge unit tests
+        run: python -m unittest discover -s tests -v
+
+  macos-swift-build:
+    name: macOS Swift Build (Xcode 26+)
+    runs-on: macos-26
+    continue-on-error: true
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check Swift toolchain
+        run: swift --version
+
+      - name: Build TVRemote (Swift 6 Release)
+        run: swift build -c release
