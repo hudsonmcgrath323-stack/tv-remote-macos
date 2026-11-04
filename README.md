@@ -12,7 +12,7 @@
 
 ## Overview
 
-**TV Remote** gives Mac users, smart-home enthusiasts, and Swift developers a fast, first-party-feeling Siri Remote right on macOS.
+**TV Remote** gives Mac users, smart-home enthusiasts, and Swift developers a fast, first-party-feeling Siri Remote right on macOS, just an FYI, im not a developer, i vibecoded this app with Gemini 4 argon, I wont be maintaining it, feel free to use it in any way you want.
 
 ### Why I Built It
 
